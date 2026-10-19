@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebuild with Rucha — Certified Nutritionist, Ahmedabad</title>
+<meta name="description" content="Protein and fat for Indian plates. Rucha is a certified nutritionist in Ahmedabad working with healthy adults across India. Count your day free with the protein calculator.">
+<link rel="canonical" href="https://rebuildwithrucha.com/">
+<meta name="theme-color" content="#4B3E7A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rebuild with Rucha">
+<meta property="og:url" content="https://rebuildwithrucha.com/">
+<meta property="og:title" content="Rebuild with Rucha — stop cutting, start adding">
+<meta property="og:description" content="You are probably eating half the protein you need. Count a real day free, then see the programmes.">
+<meta property="og:image" content="https://rebuildwithrucha.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rebuild with Rucha — stop cutting, start adding">
+<meta name="twitter:description" content="You are probably eating half the protein you need. Count a real day free.">
+<meta name="twitter:image" content="https://rebuildwithrucha.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Rebuild with Rucha",
+  "description": "Nutrition practice working with healthy adults on protein and fat adequacy in Indian diets.",
+  "url": "https://rebuildwithrucha.com/",
+  "areaServed": "IN",
+  "address": { "@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN" },
+  "availableLanguage": ["English","Hindi","Gujarati"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#4B3E7A; --plum-dp:#2F2456; --plum-lo:#E6E1F2;
+  --london:#23596E; --london-ed:#35768F;
+  --lemon:#F7E96B; --lemon-br:#FFE94A; --lemon-lo:#FCF6C9;
+  --lav:#C7BDEA; --lav-lo:#EDE9F9;
+  --pista:#B3D08C; --pista-lo:#E5EFD6;
+  --orange:#E2701F; --orange-dk:#BC4E14;
+  --ink:#2A2440; --muted:#6B6480;
+  --paper:#FCFBF7;
+  --disp:"Fraunces",Georgia,serif;
+  --body:"Karla",-apple-system,sans-serif;
+  --hand:"Caveat",cursive;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.w{max-width:1180px;margin:0 auto;padding:0 30px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange-dk);outline-offset:3px}
+h1,h2,h3,.dn{font-family:var(--disp);font-weight:900;letter-spacing:-.025em;line-height:1.02}
+h2{font-size:clamp(32px,4.6vw,54px)}
+h3{font-size:23px;line-height:1.15;font-weight:600}
+p{max-width:62ch}
+.lab{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.hand{font-family:var(--hand);font-size:25px;line-height:1.25;color:var(--orange-dk)}
+
+/* buttons */
+.btn{display:inline-block;background:var(--orange-dk);color:#fff;padding:14px 26px;font-weight:700;font-size:15px;text-decoration:none;border-radius:999px;border:2px solid var(--orange-dk);transition:transform .15s,background .15s}
+.btn:hover{background:#9C3F0F;border-color:#9C3F0F;transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-w{background:#fff;color:var(--plum);border-color:#fff}
+.btn-w:hover{background:var(--lemon);border-color:var(--lemon);color:var(--ink)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:70;background:var(--plum);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.mark{font-family:var(--disp);font-weight:900;font-size:24px;letter-spacing:-.04em;text-decoration:none;display:inline-flex;align-items:baseline;gap:7px;white-space:nowrap}
+.mark i{font-family:var(--hand);font-style:normal;font-weight:700;font-size:23px;color:var(--lemon);letter-spacing:0}
+.nlinks{display:flex;gap:24px;font-size:14.5px;font-weight:500}
+.nlinks a{text-decoration:none;opacity:.82}
+.nlinks a:hover{opacity:1;color:var(--lemon)}
+.nav .btn{padding:9px 18px;font-size:13.5px}
+
+/* hero */
+.hero{background:var(--lemon-br);padding:60px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;background:var(--lemon);opacity:.65}
+.hgrid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center;padding-bottom:58px;position:relative;z-index:2}
+h1{font-size:clamp(44px,7vw,86px);max-width:12ch}
+.hero .sub{font-size:clamp(17px,1.6vw,20px);margin-top:22px;max-width:44ch;font-weight:500;color:#4A4118}
+.hcta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;align-items:center}
+.sticker{display:inline-block;background:var(--orange);color:#fff;font-family:var(--hand);font-size:22px;padding:8px 18px;border-radius:999px;transform:rotate(-4deg);margin-top:26px;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+
+.portrait{position:relative}
+.pframe{background:var(--plum);border-radius:var(--r);aspect-ratio:4/4.6;display:flex;align-items:flex-end;padding:22px;transform:rotate(1.4deg);box-shadow:0 10px 0 rgba(0,0,0,.08)}
+.pframe span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lav)}
+.badge{position:absolute;left:-26px;bottom:34px;background:#fff;border-radius:14px;padding:16px 20px;box-shadow:0 8px 24px rgba(42,36,64,.18);transform:rotate(-2deg)}
+.badge .n{font-family:var(--disp);font-weight:900;font-size:30px;line-height:1;letter-spacing:-.04em}
+.badge .n s{text-decoration:none;font-size:15px}
+.badge .n .b{color:var(--orange-dk)}
+.badge p{font-size:11.5px;color:var(--muted);margin-top:6px;max-width:20ch;line-height:1.4}
+
+/* press */
+
+section{padding:88px 0}
+.band-plum{background:var(--plum);color:#fff}
+.band-plum h2{color:#fff}
+.band-pista{background:var(--pista-lo)}
+.band-lav{background:var(--lav-lo)}
+.band-lemon{background:var(--lemon)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:46px;flex-wrap:wrap}
+.head .lab{color:var(--muted)}
+.band-plum .head .lab{color:var(--lemon)}
+
+/* stats */
+.th3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.th{background:var(--london);border:1px solid var(--london-ed);padding:28px 26px 32px;border-radius:var(--r)}
+.th:nth-child(2){transform:translateY(-14px)}
+.th .dn{font-size:46px;color:var(--lemon);line-height:1}
+.th h3{margin:12px 0 9px;color:#fff}
+.th p{font-size:14.5px;color:#C2D9E3;max-width:none}
+
+/* about */
+.about{display:grid;grid-template-columns:.78fr 1.22fr;gap:50px;align-items:start}
+.aframe{background:var(--lav);border-radius:var(--r);aspect-ratio:4/5;display:flex;align-items:flex-end;padding:22px;transform:rotate(-1.2deg)}
+.aframe span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#4A3E73}
+.sig{font-family:var(--hand);font-size:44px;color:var(--plum);margin-top:22px;line-height:1}
+.ph{border:2px dashed var(--lav);background:var(--lav-lo);border-radius:var(--r);padding:26px 24px;color:var(--muted);font-size:14px}
+.ph b{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--plum);margin-bottom:8px}
+.ph.tall{min-height:280px;display:flex;flex-direction:column;justify-content:center}
+.creds li .phv{display:inline-block;min-width:160px;border-bottom:2px dashed var(--lav);color:var(--muted);font-size:13.5px;padding-bottom:2px}
+.creds{list-style:none;margin-top:26px;border-top:2px solid var(--plum-lo)}
+.creds li{display:grid;grid-template-columns:132px 1fr;gap:18px;padding:13px 0;border-bottom:1px solid var(--plum-lo);font-size:15px;color:#454057}
+.creds li b{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--orange-dk);font-weight:700;padding-top:4px}
+
+/* rules */
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rule{background:#fff;border:2px solid var(--pista);border-radius:var(--r);padding:28px 28px 32px}
+.rule:nth-child(2),.rule:nth-child(3){background:var(--lemon-lo);border-color:var(--lemon)}
+.rule svg{width:56px;height:56px;margin-bottom:12px}
+.rule .dn{font-size:13px;font-family:var(--body);font-weight:700;letter-spacing:.16em;color:var(--orange-dk)}
+.rule h3{margin:6px 0 10px;max-width:22ch}
+.rule p{font-size:15.5px;color:#454057}
+
+/* ledger */
+.led{display:grid;grid-template-columns:1.3fr .7fr;gap:20px}
+.led-l{background:#fff;border:2px solid var(--lav);padding:24px 24px 28px;border-radius:var(--r)}
+.led-r{background:var(--london);border:1px solid var(--london-ed);color:#fff;padding:26px 24px 28px;border-radius:var(--r)}
+.diets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.dbtn{font-family:var(--body);font-size:13.5px;font-weight:700;padding:9px 15px;background:var(--paper);border:2px solid var(--plum);border-radius:999px;cursor:pointer;color:var(--plum)}
+.dbtn:hover{background:var(--lemon);border-color:var(--plum)}
+.dbtn.on{background:var(--plum);color:#fff}
+.dnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;max-width:58ch}
+.presets{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--lav);margin-bottom:16px}
+.pbtn{font-family:var(--body);font-size:13px;font-weight:700;padding:8px 14px;background:var(--paper);border:2px solid var(--ink);border-radius:999px;cursor:pointer;color:var(--ink)}
+.pbtn:hover,.pbtn.on{background:var(--ink);color:var(--paper)}
+.food{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--plum-lo)}
+.food:last-child{border-bottom:0}
+.fname{font-size:15px;font-weight:500}
+.fname em{font-style:normal;display:block;font-size:12.5px;color:var(--muted);font-weight:400}
+.fmac{font-size:12.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.step{display:flex;background:var(--paper);border:2px solid var(--plum);border-radius:999px;overflow:hidden}
+.step button{width:30px;height:30px;background:transparent;border:0;font-size:17px;cursor:pointer;font-family:var(--body);color:var(--plum);line-height:1}
+.step button:hover{background:var(--lemon)}
+.step .qty{width:30px;text-align:center;font-weight:700;font-size:14px;line-height:30px;font-variant-numeric:tabular-nums}
+.wt{margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid #3A6E85}
+.wt label{font-size:13px;color:#C2D9E3;display:block;margin-bottom:9px}
+.wt input[type=range]{width:100%;accent-color:var(--lemon)}
+.big{font-family:var(--disp);font-weight:900;font-size:56px;line-height:.85;letter-spacing:-.04em;color:var(--lemon)}
+.big small{font-family:var(--body);font-size:15px;font-weight:500;letter-spacing:0;color:#fff;margin-left:6px}
+.meter{height:13px;background:#3A6E85;border-radius:999px;margin:15px 0 8px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--lemon);width:0;transition:width .35s ease;border-radius:999px}
+.meter.over i{background:var(--pista)}
+.mrow{display:flex;justify-content:space-between;font-size:12.5px;color:#C2D9E3;font-variant-numeric:tabular-nums}
+.fatline{margin-top:15px;font-size:13px;color:#C2D9E3;max-width:none}
+.fatline b{color:#fff;font-weight:700}
+.verdict{margin-top:18px;padding-top:16px;border-top:1px solid #3A6E85;font-size:14.5px;color:#D3E4EB;min-height:78px;max-width:none}
+.verdict b{color:var(--lemon);font-weight:700}
+
+/* table */
+.tbox{background:#fff;border:2px solid var(--pista);border-radius:var(--r);padding:28px 26px 24px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+caption{text-align:left;font-size:13.5px;color:var(--muted);padding-bottom:14px}
+th{text-align:left;font-size:11.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding:0 12px 10px 0;border-bottom:2px solid var(--plum)}
+th:not(:first-child),td:not(:first-child){text-align:right}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--plum-lo);font-size:15.5px}
+tr.hi td{background:var(--lemon);font-weight:700}
+tr.hi td:first-child{padding-left:10px;border-radius:999px 0 0 999px}
+tr.hi td:last-child{border-radius:0 999px 999px 0;padding-right:10px}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* testimonials */
+.tests{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.test{background:#fff;border-radius:var(--r);padding:26px 26px 24px;box-shadow:0 6px 0 rgba(42,36,64,.09)}
+.test:nth-child(1){transform:rotate(-.9deg)}
+.test:nth-child(3){transform:rotate(.9deg)}
+.test .q{font-family:var(--disp);font-weight:600;font-size:19px;line-height:1.35;margin-bottom:14px}
+.test .who{display:flex;align-items:center;gap:11px;font-size:13.5px;color:var(--muted)}
+.av{width:38px;height:38px;border-radius:50%;background:var(--pista);display:grid;place-items:center;font-family:var(--disp);font-weight:900;color:var(--plum);font-size:15px;flex:none}
+.test:nth-child(2) .av{background:var(--lav)}
+.test:nth-child(3) .av{background:var(--lemon)}
+
+/* offers */
+.disco{background:var(--plum);color:#fff;border-radius:var(--r);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:20px}
+.disco .lab{color:var(--lemon);margin-bottom:6px}
+.disco .free{font-family:var(--disp);font-weight:900;font-size:31px;letter-spacing:-.03em;line-height:1;margin-bottom:8px}
+.disco p{font-size:15px;color:#CAC2E4;max-width:58ch;margin:0}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tier{background:#fff;border:2px solid var(--plum-lo);padding:28px 26px 30px;display:flex;flex-direction:column;border-radius:var(--r)}
+.tier.feat{background:var(--lemon);border-color:var(--plum);box-shadow:0 8px 0 rgba(75,62,122,.16)}
+.tier .lab{color:var(--muted)}
+.tier.feat .lab{color:#6E6410}
+.tier h3{margin-top:10px}
+.price{font-family:var(--disp);font-weight:900;font-size:42px;letter-spacing:-.03em;margin:16px 0 2px;line-height:1}
+.price span{font-family:var(--body);font-size:13.5px;font-weight:500;letter-spacing:0;display:block;margin-top:8px;color:var(--muted)}
+.tier.feat .price span{color:#6E6410}
+.tier ul{list-style:none;margin:18px 0 24px;flex:1;border-top:2px solid var(--plum);padding-top:16px}
+.tier li{font-size:14.5px;padding:7px 0 7px 18px;position:relative;color:#454057}
+.tier.feat li{color:#3F3A08}
+.tier li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:2px;background:currentColor;opacity:.55}
+.tier .btn{text-align:center}
+
+/* free stuff */
+.free-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.sform{display:flex;margin-top:22px;flex-wrap:wrap;border-radius:999px;overflow:hidden;background:#fff;max-width:440px}
+.sform input{flex:1;min-width:180px;padding:14px 20px;border:0;font-family:var(--body);font-size:15px;color:var(--ink)}
+.sform button{padding:14px 24px;border:0;background:var(--orange-dk);color:#fff;font-family:var(--body);font-weight:700;font-size:15px;cursor:pointer}
+.sform button:hover{background:#9C3F0F}
+.reads a{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid #6A5A9E;text-decoration:none}
+.reads a:first-child{border-top:1px solid #6A5A9E}
+.reads a:hover .t{color:var(--lemon)}
+.reads .t{font-family:var(--disp);font-weight:600;font-size:18px}
+.reads .d{font-size:12px;color:#A79BD4;white-space:nowrap}
+
+/* faq */
+details.faq{border-bottom:2px solid var(--plum-lo)}
+details.faq:first-of-type{border-top:2px solid var(--plum-lo)}
+details.faq summary{cursor:pointer;padding:20px 44px 20px 0;font-family:var(--disp);font-weight:600;font-size:19px;position:relative;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:26px;color:var(--orange-dk)}
+details.faq[open] summary::after{content:"–"}
+details.faq p{padding:0 44px 22px 0;color:#454057;font-size:15.5px;max-width:76ch}
+
+footer{background:var(--plum-dp);color:#CAC2E4;padding:52px 0 36px;font-size:14px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:42px;padding-bottom:30px;border-bottom:1px solid #59498C}
+.fg h4{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--lemon);margin-bottom:13px;font-weight:700}
+.fg a{display:block;padding:4px 0;text-decoration:none}
+.fg a:hover{color:#fff}
+.disc{margin-top:22px;font-size:12.5px;line-height:1.6;color:#9F94C4}
+.disc p{max-width:none}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (max-width:960px){
+  .hgrid,.about,.rules,.tiers,.th3,.led,.tests,.free-grid{grid-template-columns:1fr}
+  .nlinks{display:none}
+  section{padding:58px 0}
+  .w{padding:0 20px}
+  .fg{grid-template-columns:1fr 1fr}
+  .creds li{grid-template-columns:1fr;gap:2px}
+  .th:nth-child(2){transform:none}
+  .test{transform:none!important}
+  .badge{left:auto;right:10px;bottom:-18px}
+  .pframe{transform:none}
+}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.meter i{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="w nav">
+  <a href="#top" class="mark">Rebuild <i>with Rucha</i></a>
+  <div class="nlinks">
+    <a href="#gap">The gap</a><a href="#me">About</a><a href="#method">The method</a><a href="#count">Free tool</a><a href="#work">Work with me</a>
+  </div>
+  <a href="#work" class="btn">Free 15-min call</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="w hgrid">
+    <div>
+      <p class="lab" style="color:#6E6410">Certified nutritionist · Ahmedabad · online across India</p>
+      <h1 style="margin-top:16px">Stop cutting. Start adding.</h1>
+      <p class="sub">Someone has already told you to eat less rice. Nobody told you that you are probably eating half the protein you need, or that taking ghee out of Indian food was one of the worst ideas our kitchens ever adopted.</p>
+      <div class="hcta">
+        <a href="#work" class="btn">Book a free 15-min call</a>
+        <a href="#count" class="btn btn-o">Count your day first</a>
+      </div>
+      <div class="sticker">No detoxes. Ever.</div>
+    </div>
+    <div class="portrait">
+      <div class="pframe"><span>Portrait — Rucha</span></div>
+      <div class="badge">
+        <p class="n">44<s>g</s> → <span class="b">86<s>g</s></span></p>
+        <p>What the average Indian veg day gives you, against what a 72 kg adult needs</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="band-plum rv" id="gap">
+  <div class="w">
+    <div class="head"><h2 style="max-width:15ch">The two nutrients nobody counted</h2><p class="lab">01 — The gap</p></div>
+    <div class="th3">
+      <div class="th"><span class="dn">0.6</span><h3>Grams of protein per kg</h3><p>Roughly what a typical Indian adult eats. The evidence supports 1.0 to 1.2 for a healthy adult, and more if you are over fifty, training, or losing fat rather than weight.</p></div>
+      <div class="th"><span class="dn">4g</span><h3>Protein in a katori of dal</h3><p>Not twenty. Four to five. Dal is a good food carrying a reputation it could never support, and that one misunderstanding underwrites most Indian protein deficits.</p></div>
+      <div class="th"><span class="dn">1990s</span><h3>When the ghee left</h3><p>Swapped for refined seed oils on advice that has since been heavily revised. Fat carries vitamins A, D, E and K, keeps you full, and is what makes vegetables get eaten at all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rv" id="me">
+  <div class="w">
+    <div class="head"><h2>Hello, I'm Rucha</h2><p class="lab">02 — About</p></div>
+    <div class="about">
+      <div>
+        <div class="aframe"><span>Portrait — Ahmedabad</span></div>
+      </div>
+      <div>
+        <div class="ph tall">
+          <b>About Rucha — to be written</b>
+          Her own words: how she came to this work, what she believes about food, and who she is for. Roughly one short opening statement and two paragraphs.
+        </div>
+        <p class="sig">Rucha</p>
+        <p class="ph" style="margin-top:22px"><b>Credentials — to be filled</b>Degrees, certification body and number, further training, years in practice, scope of practice, and any disclosures. Add or remove rows as needed.</p>
+        <ul class="creds">
+          <li><b>Education</b><span class="phv">&nbsp;</span></li>
+          <li><b>Certification</b><span class="phv">&nbsp;</span></li>
+          <li><b>Further training</b><span class="phv">&nbsp;</span></li>
+          <li><b>Practice</b><span class="phv">&nbsp;</span></li>
+          <li><b>Scope</b><span class="phv">&nbsp;</span></li>
+          <li><b>Disclosure</b><span class="phv">&nbsp;</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-pista rv" id="method">
+  <div class="w">
+    <div class="head"><h2>Four rules that do the work</h2><p class="lab">03 — The method</p></div>
+    <div class="rules">
+      <div class="rule">
+        <svg viewBox="0 0 60 60" fill="none" stroke="#BC4E14" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M30 8c-1 4-1 6 0 9"/><path d="M14 14c2 3 3 4 5 6"/><path d="M46 14c-2 3-3 4-5 6"/>
+          <path d="M22 44c-3-4-4-9-2-14 2-6 7-9 11-8 5 1 8 6 8 12 0 4-2 8-4 10-3 3-10 3-13 0z"/>
+        </svg>
+        <p class="dn">Rule 01</p><h3>Thirty grams of protein before noon</h3>
+        <p>The Indian breakfast is the weakest protein meal in the world and it sets up everything that follows. Fix the morning and the eleven o'clock biscuit disappears without anybody using willpower.</p>
+      </div>
+      <div class="rule">
+        <svg viewBox="0 0 60 60" fill="none" stroke="#BC4E14" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M17 22c0-6 5-10 13-10s13 4 13 10c0 3-2 5-5 6H22c-3-1-5-3-5-6z"/>
+          <path d="M22 28c1 8 2 14 3 18 1 3 9 3 10 0 1-4 2-10 3-18"/>
+          <path d="M30 36c2 2 2 5 0 7"/>
+        </svg>
+        <p class="dn">Rule 02</p><h3>Put the fat back</h3>
+        <p>Ghee on the roti, malai in the curd, coconut in the chutney, peanuts in the poha. Fat is what makes a meal hold you for four hours instead of two, and it is how the vitamins in your sabzi get absorbed at all.</p>
+      </div>
+      <div class="rule">
+        <svg viewBox="0 0 60 60" fill="none" stroke="#BC4E14" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M10 24h40"/><path d="M13 26c1 12 7 20 17 20s16-8 17-20"/>
+          <path d="M22 33c3 2 5 3 8 3s5-1 8-3"/>
+        </svg>
+        <p class="dn">Rule 03</p><h3>Dal is a side, not the protein</h3>
+        <p>Every meal needs a named protein that is not dal: curd, paneer, egg, soya, chana, fish, chicken. This single change is worth more than every carbohydrate rule combined.</p>
+      </div>
+      <div class="rule">
+        <svg viewBox="0 0 60 60" fill="none" stroke="#BC4E14" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="30" cy="30" r="21"/><circle cx="23" cy="24" r="6"/><circle cx="38" cy="24" r="6"/>
+          <path d="M14 38c6 5 26 5 32 0"/>
+        </svg>
+        <p class="dn">Rule 04</p><h3>Change nothing else</h3>
+        <p>Same kitchen, same cook, same festivals, same wedding season. If a plan cannot survive a Gujarati household in Shravan, it is not a plan, it is a holiday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-lav rv" id="count">
+  <div class="w">
+    <div class="head"><h2 style="max-width:14ch">Count a real day. Yours, probably.</h2><p class="lab">04 — Free tool</p></div>
+    <div class="led">
+      <div class="led-l">
+        <div class="diets" role="group" aria-label="Diet type">
+          <button class="dbtn on" data-d="veg" type="button">Vegetarian</button>
+          <button class="dbtn" data-d="ovo" type="button">Lacto-ovo (eggetarian)</button>
+          <button class="dbtn" data-d="non" type="button">Non-vegetarian</button>
+        </div>
+        <p class="dnote" id="dnote">Vegetarian here means dairy but no egg, which is how most Indian households use the word.</p>
+        <div class="presets">
+          <button class="pbtn on" data-p="typical" type="button">A typical day</button>
+          <button class="pbtn" data-p="rebuilt" type="button">The rebuilt day</button>
+          <button class="pbtn" data-p="clear" type="button">Clear</button>
+        </div>
+        <div id="foods"></div>
+      </div>
+      <div class="led-r">
+        <div class="wt">
+          <label for="wt">Your weight — <b id="wtv" style="color:var(--lemon)">72</b> kg</label>
+          <input id="wt" type="range" min="42" max="115" step="1" value="72">
+        </div>
+        <p class="lab" style="color:#A7C9D6;margin-bottom:10px">Protein today</p>
+        <p class="big"><span id="pv">0</span><small>of <b id="tg">86</b> g</small></p>
+        <div class="meter" id="mtr"><i></i></div>
+        <div class="mrow"><span>0</span><span id="pct">0%</span><span id="tg2">86 g</span></div>
+        <p class="fatline">Fat <b id="fv">0 g</b> · a healthy range here is roughly 55 to 85 g. Low is a problem, not a win.</p>
+        <p class="verdict" id="verdict">Add what you actually ate yesterday, or load one of the two presets.</p>
+      </div>
+    </div>
+    <p class="note">Typical cooked-portion averages for planning, not laboratory figures. A katori is taken as 150 ml.</p>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="w">
+    <div class="head"><h2 style="max-width:16ch">Where the protein actually is</h2><p class="lab">05 — Reference</p></div>
+    <div class="tbox">
+      <table>
+        <caption>Protein and fat per common Indian serving. Print it and stick it inside a kitchen cupboard.</caption>
+        <thead><tr><th>Food</th><th>Serving</th><th>Protein</th><th>Fat</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>Chicken breast</td><td>100 g cooked</td><td>30 g</td><td>4 g</td></tr>
+          <tr class="hi"><td>Soy protein isolate</td><td>30 g scoop</td><td>27 g</td><td>0.5 g</td></tr>
+          <tr class="hi"><td>Soya chunks</td><td>30 g dry</td><td>16 g</td><td>0.4 g</td></tr>
+          <tr><td>Paneer</td><td>50 g</td><td>9 g</td><td>10 g</td></tr>
+          <tr><td>Peanuts</td><td>30 g</td><td>7 g</td><td>14 g</td></tr>
+          <tr><td>Egg</td><td>1 whole</td><td>6 g</td><td>5 g</td></tr>
+          <tr><td>Roasted chana</td><td>30 g</td><td>6 g</td><td>2 g</td></tr>
+          <tr><td>Curd, full fat</td><td>1 katori</td><td>5 g</td><td>4 g</td></tr>
+          <tr><td>Dal, cooked</td><td>1 katori</td><td>4 g</td><td>3 g</td></tr>
+          <tr><td>Roti</td><td>1, 30 g atta</td><td>3 g</td><td>0.5 g</td></tr>
+          <tr><td>Rice, cooked</td><td>1 katori</td><td>3 g</td><td>0.3 g</td></tr>
+          <tr><td>Ghee</td><td>1 tsp</td><td>0 g</td><td>5 g</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Highlighted rows close most Indian protein gaps fastest. Soya chunks are the cheapest protein in any kirana store by a wide margin.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band-lemon rv">
+  <div class="w">
+    <div class="head"><h2>What people actually say</h2><p class="lab" style="color:#6E6410">06 — Clients</p></div>
+    <div class="tests">
+      <div class="test">
+        <p class="q">"Nobody asked me to stop eating rotli. My mother stopped fighting with me about it, which is the only reason it lasted past week two."</p>
+        <div class="who"><span class="av">M</span><span>Meera, 44 · Ahmedabad<br>12-week programme</span></div>
+      </div>
+      <div class="test">
+        <p class="q">"I travel three weeks a month. The airport and hotel rules were the part I actually needed and nobody had given me before."</p>
+        <div class="who"><span class="av">A</span><span>Arjun, 38 · Bengaluru<br>4-week programme</span></div>
+      </div>
+      <div class="test">
+        <p class="q">"I have been vegetarian for forty years and assumed I could not get enough protein. Turns out I just did not know where it was."</p>
+        <div class="who"><span class="av">S</span><span>Sunita, 57 · Surat<br>24-week programme</span></div>
+      </div>
+    </div>
+    <p class="note" style="color:#6E6410">Shared with permission. Individual experiences, not promised outcomes.</p>
+  </div>
+</section>
+
+<section class="rv" id="work">
+  <div class="w">
+    <div class="head"><h2>Work with me</h2><p class="lab">07 — Programmes</p></div>
+    <div class="disco">
+      <div>
+        <p class="lab">Free · 15 minutes · video or phone</p>
+        <p class="free">Discovery Call</p>
+        <p>Fifteen minutes to tell me what you eat and what you want to change. I will tell you honestly whether one of these fits, whether you would do better elsewhere, or whether you do not need me at all.</p>
+      </div>
+      <a href="#" class="btn btn-w">Book your call</a>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <p class="lab">4 weeks · individual</p><h3>Fat Loss and Muscle Gain</h3>
+        <p class="price">₹1,999<span>4 consultations, one every week</span></p>
+        <ul><li>Enough protein to hold muscle while you lose fat</li><li>One plate framework built for your kitchen and your region</li><li>Vegetarian, lacto-ovo (eggetarian) and non-vegetarian versions</li><li>Message support between consultations</li><li>Everything you are given is yours to keep</li></ul>
+        <a href="#" class="btn btn-o">Get started</a>
+      </div>
+      <div class="tier feat">
+        <p class="lab">12 weeks · individual</p><h3>The Rebuild</h3>
+        <p class="price">₹5,499<span>12 consultations, one every week</span></p>
+        <ul><li>For healthy adults who keep starting and stopping</li><li>Built around your kitchen, your cook and your travel</li><li>Your food log reviewed in writing every fortnight</li><li>Progress tracked on energy, strength and adherence, not only weight</li><li>If you have a diagnosed condition, I work alongside your doctor</li></ul>
+        <a href="#" class="btn">Get started</a>
+      </div>
+      <div class="tier">
+        <p class="lab">24 weeks · with me</p><h3>The Long Game</h3>
+        <p class="price">₹9,999<span>24 consultations, every one with me</span></p>
+        <ul><li>Every consultation with me, never the team</li><li>For people who have done short programmes and relapsed</li><li>Long enough to test the habits against a full festival season</li><li>Where a doctor has set dietary guardrails, I help you keep to them day to day</li><li>12 places a year, so there is usually a wait</li></ul>
+        <a href="#" class="btn btn-o">Get started</a>
+      </div>
+    </div>
+    <p class="note" style="max-width:74ch">All prices are inclusive and paid once, at the start. Every programme runs one consultation a week. I work with healthy adults on everyday eating.</p>
+
+  </div>
+</section>
+
+<section class="band-plum rv">
+  <div class="w free-grid">
+    <div>
+      <p class="lab" style="color:var(--lemon)">08 — Free every week</p>
+      <h2 style="margin-top:12px;max-width:12ch">The Protein Note</h2>
+      <p style="margin-top:14px;color:#CAC2E4">One email a week. A single reader question, answered properly, with the evidence attached. Subscribe and I will send you the kitchen-cupboard protein chart as a printable PDF.</p>
+      <div class="sform">
+        <label for="em" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email address</label>
+        <input id="em" type="email" placeholder="you@example.com">
+        <button type="button">Send it</button>
+      </div>
+      <p style="font-size:13px;color:#A79BD4;margin-top:12px">Around 18,000 readers. Unsubscribe in one click.</p>
+    </div>
+    <div class="reads">
+      <a href="#"><span class="t">How to get 30 g of protein into a Gujarati breakfast</span><span class="d">8 min</span></a>
+      <a href="#"><span class="t">The dal myth, with the numbers</span><span class="d">6 min</span></a>
+      <a href="#"><span class="t">Ghee: what the evidence actually says now</span><span class="d">11 min</span></a>
+      <a href="#"><span class="t">Soya chunks, the cheapest protein in India</span><span class="d">5 min</span></a>
+      <a href="#"><span class="t">Why your weight went up in week three</span><span class="d">6 min</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="w" style="max-width:900px">
+    <div class="head"><h2>Questions</h2><p class="lab">09 — FAQ</p></div>
+    <details class="faq" open><summary>I'm vegetarian. Can I actually hit these numbers?</summary><p>Yes, and roughly two thirds of my clients are. Curd, milk, paneer, soya, chana, rajma and peanuts do it without any powder. It takes more planning than a non-vegetarian diet, which is exactly what the programme is for. Jain clients get a separate framework built without the restricted vegetables.</p></details>
+    <details class="faq"><summary>I have a diagnosed condition. Can you still work with me?</summary><p>Often yes, but not on the condition itself. I can help with general eating, protein adequacy and habits, as long as that does not cut across what your doctor or dietitian has told you. Where the food advice is part of treating the condition, that belongs with them and I will refer you. Plenty of my clients see both of us.</p></details>
+    <details class="faq"><summary>Do you give meal plans?</summary><p>Not printed seven-day menus, no. Those work for about eleven days and then the wedding season arrives. What you get is a framework for building a plate, applied to your kitchen, your regional food and your week, so you can make the decision yourself in a restaurant or at your mother-in-law's house.</p></details>
+    <details class="faq"><summary>Do I need protein powder?</summary><p>Usually not, and it is not something I prescribe. I can tell you what the research says about a category, and where food genuinely struggles to close a gap I will say so and send you to your doctor or pharmacist for the specifics. I take no commission and sell nothing.</p></details>
+    <details class="faq"><summary>Will I have to weigh my food forever?</summary><p>No. You count for about three weeks so you learn what a portion looks like, then you stop. The tool above exists so that counting takes four minutes, not four weeks.</p></details>
+  </div>
+</section>
+
+<footer><div class="w">
+  <div class="fg">
+    <div>
+      <p class="mark" style="font-size:27px;color:#fff">Rebuild <i>with Rucha</i></p>
+      <p style="margin-top:12px;max-width:38ch">Rucha, Certified Nutritionist. Consulting room at Prahladnagar, Ahmedabad. Online across India in English, Hindi and Gujarati. rebuildwithrucha.com</p>
+      <p class="hand" style="color:var(--lemon);margin-top:14px">See you at breakfast.</p>
+    </div>
+    <div><h4>Practice</h4><a href="#method">The four rules</a><a href="#count">Protein counter</a><a href="#work">Programmes and prices</a><a href="#">Refund policy</a></div>
+    <div><h4>Elsewhere</h4><a href="#">hello@rebuildwithrucha.com</a><a href="#">WhatsApp the practice</a><a href="#">Instagram</a><a href="#">Media and speaking</a></div>
+  </div>
+  <div class="disc">
+    <p>Content on this site is general nutrition education for healthy adults. It is not medical advice, diagnosis or treatment, and it does not replace consultation with a qualified physician or a registered dietitian. If you have a medical condition, are pregnant, or take prescription medication, speak to your doctor before changing your diet.</p>
+    <p style="margin-top:10px">Sample site for illustration. © 2026</p>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var FOODS=[
+    {id:'roti',n:'Roti',s:'1, 30 g atta',p:3,f:0.5,d:'veg'},
+    {id:'rice',n:'Rice',s:'1 katori cooked',p:3,f:0.3,d:'veg'},
+    {id:'dal',n:'Dal',s:'1 katori cooked',p:4,f:3,d:'veg'},
+    {id:'rajma',n:'Rajma or chole',s:'1 katori cooked',p:6,f:1,d:'veg'},
+    {id:'curd',n:'Curd, full fat',s:'1 katori',p:5,f:4,d:'veg'},
+    {id:'milk',n:'Milk, full fat',s:'1 glass, 200 ml',p:6,f:8,d:'veg'},
+    {id:'paneer',n:'Paneer',s:'50 g',p:9,f:10,d:'veg'},
+    {id:'soya',n:'Soya chunks',s:'30 g dry',p:16,f:0.4,d:'veg'},
+    {id:'chana',n:'Roasted chana',s:'30 g',p:6,f:2,d:'veg'},
+    {id:'peanut',n:'Peanuts',s:'30 g',p:7,f:14,d:'veg'},
+    {id:'egg',n:'Egg',s:'1 whole',p:6,f:5,d:'ovo'},
+    {id:'chicken',n:'Chicken or fish',s:'100 g cooked',p:29,f:5,d:'non'},
+    {id:'ghee',n:'Ghee or oil',s:'1 tsp',p:0,f:5,d:'veg'}
+  ];
+  var ALLOW={veg:['veg'],ovo:['veg','ovo'],non:['veg','ovo','non']};
+  var NOTE={
+    veg:'Vegetarian here means dairy but no egg, which is how most Indian households use the word.',
+    ovo:'Lacto-ovo (eggetarian) adds eggs to dairy, but no meat or fish.',
+    non:'Everything is on the table. Most non-vegetarians here still eat meat two or three times a week, so the dairy and dal lines still matter.'
+  };
+  var TIP={
+    veg:'Soya chunks, paneer and a second katori of curd are the fastest ways to close it.',
+    ovo:'Two eggs at breakfast plus a katori of curd closes most of a gap this size.',
+    non:'A hundred grams of chicken or fish at one meal does most of this on its own.'
+  };
+  var PRESET={
+    veg:{typical:{roti:6,rice:2,dal:2,curd:1,ghee:3},rebuilt:{roti:4,rice:1,dal:2,rajma:1,curd:2,milk:1,paneer:1,soya:1,chana:1,peanut:1,ghee:4}},
+    ovo:{typical:{roti:6,rice:2,dal:2,curd:1,egg:1,ghee:3},rebuilt:{roti:4,rice:1,dal:2,curd:2,milk:1,paneer:1,egg:2,soya:1,chana:1,peanut:1,ghee:5}},
+    non:{typical:{roti:5,rice:2,dal:2,curd:1,egg:1,ghee:3},rebuilt:{roti:4,rice:1,dal:2,curd:2,milk:1,egg:2,chicken:1,peanut:1,ghee:4}}
+  };
+
+  var diet='veg', preset='typical', qty={}, wrap=document.getElementById('foods');
+  FOODS.forEach(function(f){
+    qty[f.id]=0;
+    var row=document.createElement('div');row.className='food';row.id='row-'+f.id;
+    row.innerHTML='<div class="fname">'+f.n+'<em>'+f.s+'</em></div><div class="fmac">'+f.p+'g P \u00b7 '+f.f+'g F</div>'+
+      '<div class="step"><button type="button" aria-label="Less '+f.n+'">\u2212</button><span class="qty" id="q-'+f.id+'">0</span><button type="button" aria-label="More '+f.n+'">+</button></div>';
+    var b=row.querySelectorAll('button');
+    b[0].onclick=function(){qty[f.id]=Math.max(0,qty[f.id]-1);sync();};
+    b[1].onclick=function(){qty[f.id]=Math.min(20,qty[f.id]+1);sync();};
+    wrap.appendChild(row);
+  });
+
+  var wt=document.getElementById('wt');
+  function target(){return Math.round(wt.value*1.2);}
+  function applyDiet(){
+    var ok=ALLOW[diet];
+    FOODS.forEach(function(f){
+      var show=ok.indexOf(f.d)>-1;
+      document.getElementById('row-'+f.id).style.display=show?'':'none';
+      if(!show){qty[f.id]=0;}
+    });
+    document.getElementById('dnote').textContent=NOTE[diet];
+    loadPreset();
+  }
+  function loadPreset(){
+    var pr=(PRESET[diet]&&PRESET[diet][preset])||{};
+    FOODS.forEach(function(f){qty[f.id]=pr[f.id]||0;});
+    sync();
+  }
+  function sync(){
+    var p=0,f=0;
+    FOODS.forEach(function(x){p+=qty[x.id]*x.p;f+=qty[x.id]*x.f;document.getElementById('q-'+x.id).textContent=qty[x.id];});
+    p=Math.round(p);f=Math.round(f);
+    var t=target(),pc=t?Math.round(p/t*100):0;
+    document.getElementById('pv').textContent=p;
+    document.getElementById('fv').textContent=f+' g';
+    document.getElementById('tg').textContent=t;
+    document.getElementById('tg2').textContent=t+' g';
+    document.getElementById('wtv').textContent=wt.value;
+    document.getElementById('pct').textContent=pc+'%';
+    var m=document.getElementById('mtr');
+    m.querySelector('i').style.width=Math.min(100,pc)+'%';
+    m.classList.toggle('over',p>=t);
+    var v=document.getElementById('verdict');
+    if(p===0){v.innerHTML='Add what you actually ate yesterday, or load one of the two presets.';}
+    else if(pc<60){v.innerHTML='You are at <b>'+pc+'%</b> of target, short by <b>'+(t-p)+' g</b>. This is where most people start. '+TIP[diet];}
+    else if(pc<95){v.innerHTML='Close. <b>'+(t-p)+' g</b> short. '+TIP[diet];}
+    else{v.innerHTML='Target met at <b>'+p+' g</b>. Now look at the fat line above it, because a high-protein day with almost no fat is the next mistake people make.';}
+  }
+  document.querySelectorAll('.dbtn').forEach(function(b){
+    b.onclick=function(){document.querySelectorAll('.dbtn').forEach(function(x){x.classList.remove('on');});b.classList.add('on');diet=b.dataset.d;applyDiet();};
+  });
+  document.querySelectorAll('.pbtn').forEach(function(b){
+    b.onclick=function(){
+      document.querySelectorAll('.pbtn').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');preset=b.dataset.p;
+      if(preset==='clear'){FOODS.forEach(function(f){qty[f.id]=0;});sync();}else{loadPreset();}
+    };
+  });
+  wt.oninput=sync;
+  applyDiet();
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
+</body>
+</html>
